@@ -4,30 +4,29 @@ Homebrew tap for Nasr Aldin tools.
 
 ```bash
 brew tap nasraldin/tools
-brew install ducker
+brew install ducker-lab
+ducker version    # CLI binary is still named ducker
 ```
+
+**Why `ducker-lab`?** homebrew-core already ships an unrelated formula named [`ducker`](https://formulae.brew.sh/formula/ducker) (a Docker TUI). This tap uses `ducker-lab` to avoid that conflict.
 
 ## Packages
 
-| Formula | Project |
-| --- | --- |
-| `ducker` | [docker-lab](https://github.com/nasraldin/docker-lab) — Platform Engineering Docker lab for Apple Silicon |
+| Formula | CLI | Project |
+| --- | --- | --- |
+| `ducker-lab` | `ducker` | [docker-lab](https://github.com/nasraldin/docker-lab) |
 
 Formulas are updated automatically from docker-lab GitHub Releases (see [Homebrew docs](https://nasraldin.github.io/docker-lab/homebrew/)).
 
 ## Maintainers
 
-Local clone (recommended):
-
-```text
-~/homelab/taps/homebrew-tools
-```
+Local clone (recommended): `~/homelab/taps/homebrew-tools`
 
 ```bash
 mkdir -p ~/homelab/taps
 git clone https://github.com/nasraldin/homebrew-tools.git ~/homelab/taps/homebrew-tools
 ```
 
-Source formula lives in [docker-lab `Formula/ducker.rb`](https://github.com/nasraldin/docker-lab/blob/main/Formula/ducker.rb). Sync or release CI updates this tap via **git push** — moving folders on disk does not update GitHub.
+Source formula: [docker-lab `Formula/ducker-lab.rb`](https://github.com/nasraldin/docker-lab/blob/main/Formula/ducker-lab.rb). Updates are git pushes — moving folders on disk does not update GitHub.
 
-> Until the first `v*` release is published, `sha256` in `Formula/ducker.rb` may still be a placeholder. Prefer the [install script](https://github.com/nasraldin/docker-lab#install) until then.
+> Until the first `v*` release is published, `sha256` may still be a placeholder. Prefer the [install script](https://github.com/nasraldin/docker-lab#install) until then.

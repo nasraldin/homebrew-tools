@@ -1,14 +1,18 @@
 # Homebrew formula for the nasraldin/tools tap (repo: nasraldin/homebrew-tools).
 #
+# Formula name is ducker-lab (not "ducker") because homebrew-core already has
+# https://formulae.brew.sh/formula/ducker — a different Docker TUI project.
+# The installed CLI binary is still named `ducker`.
+#
 # This file is the source of truth. On GitHub Release, CI runs
 # scripts/publish-homebrew.sh to push an updated copy into the tap with the
-# correct url + sha256. See docs/homebrew.md for first-time setup.
+# correct url + sha256. See docs/homebrew.md for setup.
 #
 # Users:
 #   brew tap nasraldin/tools
-#   brew install ducker
+#   brew install ducker-lab
 #
-class Ducker < Formula
+class DuckerLab < Formula
   desc "Production-grade local Platform Engineering environment for Apple Silicon"
   homepage "https://github.com/nasraldin/docker-lab"
   url "https://github.com/nasraldin/docker-lab/archive/refs/tags/v1.0.0.tar.gz"
@@ -31,6 +35,8 @@ class Ducker < Formula
 
   def caveats
     <<~EOS
+      The CLI is `ducker` (formula name is ducker-lab to avoid homebrew-core's unrelated `ducker`).
+
       After install, create the lab VM and Docker stack:
 
         ducker install
