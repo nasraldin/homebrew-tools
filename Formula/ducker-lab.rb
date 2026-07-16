@@ -13,10 +13,10 @@
 #   brew install ducker-lab
 #
 class DuckerLab < Formula
-  desc "Production-grade local Platform Engineering environment for Apple Silicon"
+  desc "Native Linux Docker on Apple Silicon (Lima vz + rootless Engine)"
   homepage "https://github.com/nasraldin/docker-lab"
   url "https://github.com/nasraldin/docker-lab/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "REPLACE_WITH_TARBALL_SHA256"
+  sha256 "afb8149d0ff6c4aa4cafe591b4f1fc1c02803fede5c285d26479d5c54d1e1c0e"
   license "MIT"
 
   depends_on "lima"
