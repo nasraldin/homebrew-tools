@@ -20,11 +20,11 @@ Formulas are updated automatically from docker-lab GitHub Releases (see [Homebre
 
 ## Maintainers
 
-Local clone (recommended): `~/homelab/taps/homebrew-tools`
+Local clone (recommended): `~/homelab/homebrew/homebrew-tools`
 
 ```bash
-mkdir -p ~/homelab/taps
-git clone https://github.com/nasraldin/homebrew-tools.git ~/homelab/taps/homebrew-tools
+mkdir -p ~/homelab/homebrew
+git clone https://github.com/nasraldin/homebrew-tools.git ~/homelab/homebrew/homebrew-tools
 ```
 
 Source formula: [docker-lab `Formula/ducker-lab.rb`](https://github.com/nasraldin/docker-lab/blob/main/Formula/ducker-lab.rb). Updates are git pushes — moving folders on disk does not update GitHub.
