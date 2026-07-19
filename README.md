@@ -12,8 +12,8 @@ ducker version    # CLI binary is still named ducker
 
 ## Packages
 
-| Formula | CLI | Project |
-| --- | --- | --- |
+| Formula      | CLI      | Project                                               |
+| ------------ | -------- | ----------------------------------------------------- |
 | `ducker-lab` | `ducker` | [docker-lab](https://github.com/nasraldin/docker-lab) |
 
 Formulas are updated automatically from docker-lab GitHub Releases (see [Homebrew docs](https://nasraldin.github.io/docker-lab/homebrew/)).
