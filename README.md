@@ -1,5 +1,7 @@
 # nasraldin/homebrew-tools
 
+[![CI](https://github.com/nasraldin/homebrew-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/nasraldin/homebrew-tools/actions/workflows/ci.yml)
+
 Homebrew tap for Nasr Aldin tools.
 
 ```bash
