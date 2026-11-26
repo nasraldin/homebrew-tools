@@ -15,18 +15,19 @@
 class DuckerLab < Formula
   desc "Native Linux Docker on Apple Silicon (Lima vz + rootless Engine)"
   homepage "https://github.com/nasraldin/docker-lab"
-  url "https://github.com/nasraldin/docker-lab/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "afb8149d0ff6c4aa4cafe591b4f1fc1c02803fede5c285d26479d5c54d1e1c0e"
+  url "https://github.com/nasraldin/docker-lab/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "44119eb58a85597af910fb907a52b69877829e34195463ca541271b42a72cfb2"
   license "MIT"
 
-  depends_on arch: :arm64
-  depends_on "docker"
-  depends_on "docker-buildx"
-  depends_on "docker-compose"
-  depends_on "jq"
   depends_on "lima"
-  depends_on :macos
+  depends_on "docker"
+  depends_on "docker-compose"
+  depends_on "docker-buildx"
+  depends_on "docker-credential-helper"
   depends_on "yq"
+  depends_on "jq"
+  depends_on :macos
+  depends_on arch: :arm64
 
   def install
     prefix.install Dir["*"]
