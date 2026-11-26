@@ -15,8 +15,8 @@
 class DuckerLab < Formula
   desc "Native Linux Docker on Apple Silicon (Lima vz + rootless Engine)"
   homepage "https://github.com/nasraldin/docker-lab"
-  url "https://github.com/nasraldin/docker-lab/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "44119eb58a85597af910fb907a52b69877829e34195463ca541271b42a72cfb2"
+  url "https://github.com/nasraldin/docker-lab/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "5060958abfbb261d890a7ae87e96ea45ddc08877d930f93749f65549b0473b19"
   license "MIT"
 
   depends_on arch: :arm64
