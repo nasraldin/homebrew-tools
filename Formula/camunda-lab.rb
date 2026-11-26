@@ -25,9 +25,9 @@ class CamundaLab < Formula
     system "go", "build", *std_go_args(ldflags: ldflags, output: bin/"camunda"), "./cmd/camunda"
   end
 
-  def post_install
+  post_install_steps do
     # Start Lab UI in the background so browser-only users can install from Setup.
-    system bin/"camunda", "ui", "--no-open", out: File::NULL, err: File::NULL
+    run "camunda", args: ["ui", "--no-open"], base: :bin, print_stderr: false
   end
 
   def caveats
